@@ -11,18 +11,15 @@ function App() {
   const [error, setError] = useState('');
 
   const Login = details => {
-     console.log(details)
-
      if (details.email === adminUser.email && details.password === adminUser.password) {
       console.log('Logged in')
       setUser({
         name: details.name, 
         email: details.email
       })
-      console.log(user)
      } else {
-      setError('Details do not match!')
-     }
+        setError('Invalid password!')
+    }
   }
 
   const Logout = () => {

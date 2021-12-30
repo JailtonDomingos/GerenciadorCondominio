@@ -21,6 +21,8 @@
 
 .popup-inner .close-btn {
     position: absolute;
+    justify-content: center;
+    align-items: center;
     top: 16px;
     right: 16px;
 }

@@ -1,14 +1,13 @@
 import React from 'react'
-import 'Popup.css'
+import './Popup.css'
 
-function Popup({props, error}) {
-    return ( props.trigger ) ? (
+function Popup( props ) {
+
+    return ( props.trigger) ? (
         <div className='popup'>
             <div className="popup-inner">
-                {console.log(error.children)}
-                <button className="close-btn">Close</button>
+                <button className="close-btn" onClick={() => props.setTrigger(false)} >Button</button>
                 { props.children }
-                
             </div>
         </div>
     ) : ""

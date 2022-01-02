@@ -3,12 +3,11 @@ import './Popup.css'
 import GenericButton from './GenericButton'
 
 function Popup( props ) {
-    //setError, buttonPopup, setButtonPopup, message, error
-    //Clean error
     const PopupClose = () => {
         props.setButtonPopup(false)
     }
 
+    // Arrow function to hook verify - Setpopupbutton(True/false)
     return ( props.buttonPopup ) ? (
         <div className='popup'>
             <div className="popup-inner">
@@ -21,5 +20,3 @@ function Popup( props ) {
 }
 
 export default Popup
-//{ props.children }
-//<button className="close-btn" onClick={() => props.setTrigger(false)} >Button</button>

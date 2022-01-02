@@ -35,9 +35,3 @@ function LoginForm( props ) {
 export default LoginForm
 
 // Futuramente criar um component para Button do tipo Input 'Button-submit'
-
-// Notas que eu estou passando meus valores de detail pela variavel que já esta vindo no parametro 'Login' pela constante details criada na classe
-// Investigar se é possível fazer isso para a classe popup com as variaveis de setTriger
-// Criar um state na classe popup e passar essa constante para a variavel que virá das classe que chamam este componente
-
-//Corrigir bug erro sempre que der um primeiro Erro no login

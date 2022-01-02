@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Popup from "./Popup";
 
 function LoginForm( props ) {
-    //Login, error, buttonPopup, setButtonPopup
     const [details, setDetails] = useState({name: '', email: '', password: ''})
 
     const submitHandler = e => {

@@ -35,8 +35,9 @@ function App() {
     setUser({name: '', email: ''}) // Setting hook
   }
 
+//Always i'll show login page until log in
   return (
-    <div className="App"> // Always i'll show login page until log in
+    <div className="App"> 
       {(user.email !== '') ? ( //Verificar futuramente com uma variable true que virá da validação do hash de login
         
         <div className="welcome"> 

@@ -1,5 +1,5 @@
 import React from 'react'
-import './GenericButton.css'
+import '../components-css/GenericButton.css'
 
 function GenericButton( props ) { // Component button with standart system appearance  
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import './Popup.css'
+import '../components-css/Popup.css'
 import GenericButton from './GenericButton'
 
 function Popup( props ) {
@@ -7,7 +7,6 @@ function Popup( props ) {
         props.setButtonPopup(false)
     }
 
-    // Arrow function to hook verify - Setpopupbutton(True/false)
     return ( props.buttonPopup ) ? (
         <div className='popup'>
             <div className="popup-inner">

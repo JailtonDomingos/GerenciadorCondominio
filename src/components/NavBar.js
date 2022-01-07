@@ -1,5 +1,6 @@
 import React from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavBarElements'
+import Apartamentos from './Apartamentos.js'
 
 const NavBar = ( props ) => {
     return (
@@ -14,10 +15,10 @@ const NavBar = ( props ) => {
                         Apartamentos
                     </NavLink>
                     <NavLink to='/condominos' activeStyle>
-                        Condominos
+                        Condôminos
                     </NavLink>
                     <NavLink to='/reservas' activeStyle>
-                        Reservas  
+                        Reservas
                     </NavLink>
                     <NavLink to='/avisos' activeStyle>
                         Avisos

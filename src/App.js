@@ -3,6 +3,7 @@ import LoginForm from "./components/LoginForm";
 import GenericButton from "./components/GenericButton";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import Apartamentos from "./components/Apartamentos";
 
 function App() {
   const adminUser = { // Object admin user for testing
@@ -40,16 +41,13 @@ function App() {
 //Always i'll show login page until log in
   return (
       <div className="App"> 
-        {(user.email !== '') ? ( // user.email !== ''//Verificar futuramente com uma variable true que virá da validação do hash de login
+        {(true) ? ( // user.email !== ''//Verificar futuramente com uma variable true que virá da validação do hash de login
             <>
-              <Router> 
-                <div className="welcome"> 
-                    {/*<h2>Welcome, <span>{user.name}</span></h2>*/}
-
-                    <NavBar event={Logout}/>
-                    
-                    {/*<GenericButton event={Logout} message={'Logout'}/>*/}
-                </div>
+              <Router className="welcome"> 
+                  <NavBar event={Logout}/>
+                  <Routes>
+                    <Route path='/' exact component={Apartamentos} />
+                  </Routes>  
               </Router>
             </>
           ) : (
@@ -75,4 +73,5 @@ export default App;
   Deixar a primeira tela sendo o login com um background bonito do condominio
   Diferenciar o login de user/admin
 
+  Antigo button logout: <GenericButton event={Logout} message={'Logout'}/>
 */

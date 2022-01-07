@@ -14,10 +14,17 @@ input {
 
 .App {
     height: 100vh;
+    /*display: flex;
+    align-items: center;
+    justify-content: center;*/
+    background: #53565A;
+}
+
+.App-Login {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #53565A;
+    height: 100%;
 }
 
 form {
@@ -104,12 +111,14 @@ form .form-inner input[type='submit']:hover,
     background-position: 100% 0%;
 }
 
+/*
 .welcome {
     width: 100%;
     max-width: 480px;
     background-color: #FFF;
     padding: 15px 30px;
 }
+*/
 
 .welcome h2 {
     color: #888;

@@ -40,15 +40,15 @@ function App() {
 //Always i'll show login page until log in
   return (
       <div className="App"> 
-        {(true) ? ( // user.email !== ''//Verificar futuramente com uma variable true que virá da validação do hash de login
+        {(user.email !== '') ? ( // user.email !== ''//Verificar futuramente com uma variable true que virá da validação do hash de login
             <>
               <Router> 
                 <div className="welcome"> 
                     {/*<h2>Welcome, <span>{user.name}</span></h2>*/}
 
-                    <NavBar/>
+                    <NavBar event={Logout}/>
                     
-                    <GenericButton event={Logout} message={'Logout'}/>
+                    {/*<GenericButton event={Logout} message={'Logout'}/>*/}
                 </div>
               </Router>
             </>
@@ -65,6 +65,8 @@ function App() {
 export default App;
 
 /*
+23:04
+16:35 - 1:42:16
   Implementar o component button logout na navbar
   Implementar Logo
   Implementar components para as novas pages

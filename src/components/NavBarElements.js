@@ -8,7 +8,7 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: space-between;
     padding: 0.5rem calc(100vw - 1000px) / 2;
-    z-index: 10;
+    z-index: 10;    
 `
 
 export const NavLink = styled(Link)`
@@ -52,7 +52,7 @@ export const NavMenu = styled.div`
 export const NavBtn = styled.nav`
     display: flex;
     align-itens: center;
-    mergin-right: 24px;
+    margin-right: 1rem;
 
     @media screen and (max-width: 768px){
         display: none;
@@ -67,15 +67,15 @@ export const NavBtnLink = styled(Link)`
     border: none;
     outline: none;
     cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    background-image: linear-gradient(to right, #FFCE00 50%, #FFCE00 50%, #FE4880);
+    background-size: 200%;
+    background-position: 0%;
     text-decoration: none;
-    margin-right: 1rem;
     margin: auto;
+    transition: 0.4s;
 
     &:hover {
-        transition: all 0.2s ease-in-out; 
-        background: #fff;
-        color: #010606;
+        background-position: 100% 0%;
     }
 `
 

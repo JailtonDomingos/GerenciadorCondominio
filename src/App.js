@@ -3,7 +3,12 @@ import LoginForm from "./components/LoginForm";
 import GenericButton from "./components/GenericButton";
 import NavBar from "./components/NavBar";
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
 import Apartamentos from "./components/Apartamentos";
+import Home from "./components/Home";
+import Condominos from "./components/Condominos"
+import Reservas from "./components/Reservas"
+import Avisos from "./components/Avisos"
 
 function App() {
   const adminUser = { // Object admin user for testing
@@ -41,12 +46,16 @@ function App() {
 //Always i'll show login page until log in
   return (
       <div className="App"> 
-        {(true) ? ( // user.email !== ''//Verificar futuramente com uma variable true que virá da validação do hash de login
+        {(user.email !== '') ? ( // user.email !== ''//Verificar futuramente com uma variable true que virá da validação do hash de login
             <>
               <Router className="welcome"> 
                   <NavBar event={Logout}/>
                   <Routes>
-                    <Route path='/' exact component={Apartamentos} />
+                    <Route path='/home' exact element={<Home/>} />
+                    <Route path='/apartamentos' element={<Apartamentos/>} />
+                    <Route path='/condominos' element={<Condominos/>} />
+                    <Route path='/reservas' element={<Reservas/>} />
+                    <Route path='/avisos' element={<Avisos/>} />
                   </Routes>  
               </Router>
             </>

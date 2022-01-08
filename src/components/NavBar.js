@@ -6,7 +6,7 @@ const NavBar = ( props ) => {
     return (
         <>
             <Nav>
-                <NavLink to='/'>
+                <NavLink to='/home'>
                     <h1>LOGO</h1>
                 </NavLink>
                 <Bars/>

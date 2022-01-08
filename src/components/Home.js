@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Avisos() {
+//function Apartamentos () {
+const Home = () => {
     return (
         <div 
             style={{
@@ -8,12 +9,12 @@ function Avisos() {
                 justifyContent: 'center',
                 alignItems: 'center',
                 height: '90vh',
-                color: 'black'
+                color: 'Black',
             }}
         >
-            <h3>Avisos</h3>
+            <h3>Home</h3>
         </div>
     )
 }
 
-export default Avisos
+export default Home

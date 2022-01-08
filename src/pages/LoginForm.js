@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Popup from "./Popup";
+import Popup from "../components/Popup";
 
 function LoginForm( props ) {
     const [details, setDetails] = useState({name: '', email: '', password: ''})

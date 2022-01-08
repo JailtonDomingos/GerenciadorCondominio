@@ -1,6 +1,6 @@
 import React from 'react';
 import { Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavBarElements'
-import Apartamentos from './Apartamentos.js'
+import Apartamentos from '../pages/Apartamentos.js'
 
 const NavBar = ( props ) => {
     return (

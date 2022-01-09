@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components-css/Popup.css'
-import GenericButton from '../pages/GenericButton'
+import GenericButton from './GenericButton'
 
 function Popup( props ) {
     const PopupClose = () => {

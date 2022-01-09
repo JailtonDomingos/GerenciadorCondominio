@@ -11,49 +11,23 @@ import Reservas from "./pages/Reservas"
 import Avisos from "./pages/Avisos"
 
 
+import storeProvider from "./utils/useStorage"
+
 function App() {
 
-  const adminUser = { // Object admin user for testing
-    email: 'admin@admin.com',
-    password: 'admin'
-  }
-
   const [user, setUser] = useState({name: "", email: ""}); // Hook for login user/password verify
-  const [error, setError] = useState(''); // Hook for error on login
-  const [buttonPopup, setButtonPopup] = useState () // Hook for error login popup 
-
-  const Login = details => {
-    console.log(details)
-
-     if (details.email === adminUser.email && details.password === adminUser.password) { // If correct user/pass set hook user login
-      console.log('Logged in')
-      setUser({
-        name: details.name, 
-        email: details.email
-        
-      })
-      setError('')
-     } else { // Setting error for popup message
-        setError('Invalid password!')
-    }
-    console.log(user)
-  }
-
-  const Logout = () => { // Function to clear user/pass for log out
-    console.log('Logout')
-
-    setUser({name: '', email: ''}) // Setting hook
-  }
 
 
 //Always i'll show login page until log in
   return (
     <div className="App"> 
       <Router className="welcome">
-        <Routes>
-          <Route exact path="/login" element={<LoginForm/>} />
-          <Route path="/" Element={<Home/>} />
-        </Routes>
+        <storeProvider>
+          <Routes>
+            <Route exact path="/login" element={<LoginForm/>} />
+            <Route path="/" Element={<Home/>} />
+          </Routes>
+        </storeProvider>
       </Router>
     </div>
 

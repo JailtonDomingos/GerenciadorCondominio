@@ -1,8 +1,6 @@
 # Sing in on project
 
-> Name: ' testes ' 
-
-> Email: admin@admin.com
+> Email: admin
 
 > Password: admin
 

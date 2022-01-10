@@ -37,16 +37,6 @@ function App() {
 export default App;
 
 /*
-23:04
-16:35 - 1:42:16
-  Implementar o component button logout na navbar
-  Implementar Logo
-  Implementar components para as novas pages
-
-  Re-pensar o login para como irei fazer para user e admin do sistema
-  Deixar a primeira tela sendo o login com um background bonito do condominio
-  Diferenciar o login de user/admin
-
   Antigo button logout: <GenericButton event={Logout} message={'Logout'}/>
 
 
